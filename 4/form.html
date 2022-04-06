@@ -40,18 +40,20 @@
   </header>
   <main class="main-container">
     <section class="stats">
-      <h1 class="visually-hidden">sedona</h1>
+      <div class="stats__title">
+        <img src="img/back-catalog.jpg" width="901" height="214" alt="фон приветствия">
+        <h1 class="visually-hidden">sedona</h1>
+      </div>
       <div class="stats__wrapper">
-        <h2 class="visually-hidden">Welcome Sedona</h2>
         <p class="stats__slogan">Оставьте свой отзыв</p>
-        <p class="stats__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        <p class="stats__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </div>
     </section>
-    <section class="data">
-      <div class="data__wrapper">
-        <h2 class="data__caption">Представьтесь:</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+    <section class="form">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__data data">
+          <h2 class="data__caption">Представьтесь:</h2>
           <p class="data__title">
             <label for="name">Имя*:</label>
             <input id="name" type="text" name="name" placeholder="Пётр">
@@ -60,31 +62,23 @@
             <label for="surname">Фамилия*:</label>
             <input id="surname" type="text" name="surname" placeholder="Пустота">
           </p>
-          <p class="data__title">
+          <p class="form__title">
             <label for="patronymic">Отчество*:</label>
             <input id="patronymic" type="text" name="patronymic" placeholder="Викторович">
           </p>
-        </form>
-      </div>
-    </section>
-    <section class="contact-info">
-      <div class="contact-info__wrapper">
-        <h2 class="contact-info__caption">Контактная информация</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="contact-info__title">
+        </div>
+        <div class="form__contact contact">
+          <h2 class="contact__caption">Контактная информация</h2>
+          <p class="contact__title">
             <label for="phone">Контактный телефон*:</label>
             <input id="phone" type="text" name="phone" placeholder="Введите телефон">
           </p>
-          <p class="contact-info__title">
+          <p class="contact__title">
             <label for="e-mail">Электронная почта*:</label>
             <input id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
           </p>
-        </form>
-      </div>
-    </section>
-    <section class="feedback">
-      <div class="feedback__wrapper">
-        <form action="https://echo.htmlacademy.ru" method="post">
+        </div>
+        <div class="form__feedback feedback">
           <h2 class="feedback__title">Ваше общее впечатление:</h2>
           <ul class="feedback__list list-reset">
             <li class="feedback__item">
@@ -103,11 +97,9 @@
               <label class="feedback__ladel" for="filter-difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
-        </form>
-      </div>
-      <div class="attractions">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="attractions__title">Посещенные достопримечательности:</p>
+        </div>
+        <div class="form__attractions attractions">
+          <h2 class="attractions__title">Посещенные достопримечательности:</h2>
           <ul class="attractions__list list-reset">
             <li class="attractions__item">
               <input class="attractions__input-checkbox visually-hidden" type="checkbox" name="attractions"
@@ -130,22 +122,14 @@
               <label class="attractions__label" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
-        </form>
-      </div>
-    </section>
-    <section class="recall">
-      <div class="recall__wrapper">
-        <h2 class="recall__paragraph">Опишите свои эмоции:</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input id="recall-field" type="text" name="emotion" placeholder="Опишите подробно все свои восторги">
-          </p>
-          <button class="recall__toggle" type="button">Отправить отзыв</button>
-          <p class="recall__title">
-            <label for="recall-field">
-              <span>*-обязательные поля</span>
-          </p>
-        </form>
-      </div>
+        </div>
+        <div class="form__recall recall">
+          <h2 class="recall__paragraph">Опишите свои эмоции:</h2>
+          <input id="recall-field" type="text" name="emotion" textarea="Опишите подробно все свои восторги">
+          <button class="recall__toggle" type="submit">Отправить отзыв</button>
+          <p class="recall__title">*-обязательные поля</p>
+        </div>
+      </form>
     </section>
   </main>
   <footer class="footer">
