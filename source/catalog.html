@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>catalog</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="main-nav">
+      <a class="main-nav__logo" href="index.html">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item  main-nav__item--active">
+          <a class="main-nav__link">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="stats">
+      <div class="stats__title">
+        <img src="img/back-catalog.jpg" width="901" height="214" alt="фон приветствия">
+        <h1 class="visually-hidden">sedona</h1>
+      </div>
+      <div class="stats__wrapper">
+        <p class="stats__slogan">Фото и видео</p>
+        <p class="stats__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+          и экономике.</p>
+      </div>
+    </section>
+    <section class="sights">
+      <h2 class="vissuly-hidden">Достопримечательности</h2>
+      <ul class="sights__list list-reset">
+        <li class="sights__item">
+          <div class="sights__image">
+            <img src="img/mobile-road.jpg" width="280" height="280" alt="дорога">
+          </div>
+          <div class="sights__wrapper">
+            <div class="sights__description">
+              <h2 class="sights__title">Неродные просторы</h2>
+              <p class="sights__author">Автор фото: Борис</p>
+            </div>
+            <button class="sights__like" type="button">1350</button>
+          </div>
+        </li>
+        <li class="sights__item">
+          <div class="sights__image">
+            <img src="img/mobile-plant.jpg" width="280" height="280" alt="растительность">
+          </div>
+          <div class="sights__wrapper">
+            <div class="sights__description">
+              <h2 class="sights__title">Местная растительность</h2>
+              <p class="sights__author">Автор фото: Сергей</p>
+            </div>
+            <button class="sights__like" type="button">143</button>
+          </div>
+        </li>
+        <li class="sights__item">
+          <div class="sights__image">
+            <img src="img/mobile-forest-road.jpg" width="280" height="280" alt="лесная дорога">
+          </div>
+          <div class="sights__wrapper">
+            <div class="sights__description">
+              <h2 class="sights__title">Дорога на север</h2>
+              <p class="sights__author">Автор фото: Петр</p>
+            </div>
+            <button class="sights__like" type="button">96</button>
+          </div>
+        </li>
+        <li class="sights__item">
+          <div class="sights__image">
+            <img src="img/mobile-bridge.jpg" width="280" height="280" alt="мост дьявола">
+          </div>
+          <div class="sights__wrapper">
+            <div class="sights__description">
+              <h2 class="sights__title">Мост дьявола</h2>
+              <p class="sights__author">Автор фото: Антон</p>
+            </div>
+            <button class="sights__like" type="button">254</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        раз!</p>
+      <div class="video__image">
+        <img src="img/video-mobile.jpg" width="280" height="177" alt="видеопрезентация">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__hashtag" href="#">#visitsedona</a>
+    <ul class="footer__list list-reset">
+      <li class="footer__item">
+        <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Вконтакте</span>
+          <img src="img/icon-vk.svg" width="48" height="48" alt="Вконтакте">
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграм</span>
+          <img src="img/icon-telegram.svg" width="48" height="48" alt="Телеграм">
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Ютуб</span>
+          <img src="img/icon-youtube.svg" width="48" height="48" alt="Ютуб">
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <span class="footer__copyright-text">Разработано:</span>
+      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35"
+          viewBox="0 0 27 35" fill="none">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
