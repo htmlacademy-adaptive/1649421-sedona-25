@@ -1,0 +1,33 @@
+.stats {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stats__wrapper {
+  padding: 37px 20px 25px 20px;
+}
+
+.stats__slogan {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.stats__intro {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}

@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.footer__hashtag {
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.footer__list {
+  display: flex;
+}
+
+.footer__item {
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.footer__link {
+  padding: 12px;
+}
+
+.footer__copyright-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}

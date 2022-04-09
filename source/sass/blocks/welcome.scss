@@ -1,0 +1,27 @@
+.welcome {
+  display: block;
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.welcome__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
