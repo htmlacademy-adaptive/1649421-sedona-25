@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Седона</title>
+  <title>Index</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="https://htmlacademy-adaptive.github.io/1649421-sedona-25/5/">
 </head>
 
@@ -20,22 +21,22 @@
       </button>
       <ul class="main-nav__list list-reset">
         <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link">
+          <a class="main-nav__link page-title">
             Главная
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
+          <a class="main-nav__link page-title" href="catalog.html">
             Фото и видео
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
+          <a class="main-nav__link page-title" href="form.html">
             Форма отзыва
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="main-nav__link page-title" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -43,11 +44,11 @@
   <main class="main-container">
     <section class="welcome">
       <div class="welcome__title">
-        <img src="img/back-mobile.jpg" width="901" height="389" alt="фон приветствия">
+        <img src="img/text-index.svg" width="282" height="214" alt="welcome">
         <h1 class="visually-hidden">Welcome Sedona</h1>
       </div>
       <div class="welcome__description">
-        <p class="welcome__slogan">
+        <p class="welcome__slogan page-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p class="welcome__intro">
@@ -61,7 +62,7 @@
         <li class="advantages__item">
           <div class="advantages__item-wrapper">
             <div class="advantages__wrapper">
-              <h3 class="advantages__title">Настоящий городок</h3>
+              <h3 class="advantages__title page-title">Настоящий городок</h3>
               <p class="advantages__number">— №1 —</p>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
@@ -72,19 +73,19 @@
           <ul class="advantages__other list-reset">
             <li class="advantages__item">
               <div class="advantages__other-wrapper advantages__other-wrapper--motel">
-                <h3 class="advantages__title">Жилье</h3>
+                <h3 class="advantages__title page-title">Жилье</h3>
                 <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__other-wrapper advantages__other-wrapper--food">
-                <h3 class="advantages__title">Еда</h3>
+                <h3 class="advantages__title page-title">Еда</h3>
                 <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantages__other-wrapper advantages__other-wrapper--souvenir">
-                <h3 class="advantages__title">Сувениры</h3>
+                <h3 class="advantages__title page-title">Сувениры</h3>
                 <p class="advantages__description">Не только китайского, но и местного производства!</p>
               </div>
             </li>
@@ -93,7 +94,7 @@
         <li class="advantages__item">
           <div class="advantages__item-wrapper">
             <div class="advantages__wrapper">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <h3 class="advantages__title page-title">Там есть мост дьявола</h3>
               <p class="advantages__number">— №2 —</p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
@@ -103,22 +104,22 @@
           </div>
         </li>
         <li class="advantages__item">
-          <div class="advantages__wrapper advantages__wrapper--light">
-            <h3 class="advantages__title">Небольшая площадь</h3>
+          <div class="advantages__wrapper">
+            <h3 class="advantages__title page-title">Небольшая площадь</h3>
             <p class="advantages__number">— №3 —</p>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item">
-          <div class="advantages__wrapper advantages__wrapper--light">
-            <h3 class="advantages__title">Красивая дорога</h3>
+          <div class="advantages__wrapper">
+            <h3 class="advantages__title page-title">Красивая дорога</h3>
             <p class="advantages__number">— №4 —</p>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item">
           <div class="advantages__wrapper advantages__wrapper--light">
-            <h3 class="advantages__title">Мало туристов</h3>
+            <h3 class="advantages__title page-title">Мало туристов</h3>
             <p class="advantages__number">— №5 —</p>
             <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
           </div>
@@ -126,7 +127,7 @@
       </ul>
     </section>
     <section class="search">
-      <h2 class="search__title">Заинтересовались?</h2>
+      <h2 class="search__title page-title">Заинтересовались?</h2>
       <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <a class="search__button button" href="#">Найти гостиницу</a>
@@ -134,8 +135,7 @@
     <section class="map">
       <h2 class="visually-hidden">карта</h2>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru"
-        width="100%" loading="lazy"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>

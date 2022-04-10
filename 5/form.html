@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>form</title>
+  <title>Form</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="https://htmlacademy-adaptive.github.io/1649421-sedona-25/5/">
 </head>
 
@@ -19,22 +20,22 @@
       </button>
       <ul class="main-nav__list list-reset">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">
+          <a class="main-nav__link page-title" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
+          <a class="main-nav__link page-title" href="catalog.html">
             Фото и видео
           </a>
         </li>
         <li class="main-nav__item  main-nav__item--active">
-          <a class="main-nav__link">
+          <a class="main-nav__link page-title">
             Форма отзыва
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="main-nav__link page-title" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
   </ul>
     </nav>
@@ -42,11 +43,11 @@
   <main class="main-container">
     <section class="stats">
       <div class="stats__title">
-        <img src="img/back-catalog.jpg" width="901" height="214" alt="фон приветствия">
+        <img src="img/text-sedona.svg" width="229" height="39" alt="sedona">
         <h1 class="visually-hidden">sedona</h1>
       </div>
       <div class="stats__wrapper">
-        <p class="stats__slogan">Оставьте свой отзыв</p>
+        <p class="stats__slogan page-title">Оставьте свой отзыв</p>
         <p class="stats__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
       </div>
@@ -55,7 +56,7 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper-fieldset">
           <fieldset class="form__fieldset form__fieldset--data">
-            <h2 class="form__fieldset-title">Представьтесь:</h2>
+            <h2 class="form__fieldset-title page-title">Представьтесь:</h2>
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
                 <label class="form__contact-label" for="name">Имя*:</label>
@@ -72,7 +73,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contact">
-            <h2 class="form__fieldset-title">Контактная информация</h2>
+            <h2 class="form__fieldset-title page-title">Контактная информация</h2>
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
@@ -90,7 +91,7 @@
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--feedback">
-          <h2 class="form__fieldset-title form__fieldset-title--lines">Ваше общее впечатление:</h2>
+          <h2 class="form__fieldset-title form__fieldset-title--lines page-title">Ваше общее впечатление:</h2>
           <ul class="form__options list-reset">
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное" id="filter-positive" checked>
@@ -107,7 +108,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--attractions">
-          <h2 class="form__fieldset-title form__fieldset-title--lines">Посещенные достопримечательности:</h2>
+          <h2 class="form__fieldset-title form__fieldset-title--lines page-title">Посещенные достопримечательности:</h2>
           <ul class="form__options list-reset">
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="мост-дьявола" id="devil-bridge" checked>
@@ -128,7 +129,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--recall">
-          <h2 class="form__fieldset-title form__fieldset-title--lines">Опишите свои эмоции:</h2>
+          <h2 class="form__fieldset-title form__fieldset-title--lines page-title">Опишите свои эмоции:</h2>
           <textarea id="recall-field" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--submit">
