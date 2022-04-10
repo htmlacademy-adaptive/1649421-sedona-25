@@ -1,7 +1,18 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #e7e5e5;
+}
+
 .body {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
   font-size: 18px;
@@ -10,10 +21,6 @@
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-html {
-  box-sizing: border-box;
 }
 
 .list-reset {
@@ -35,14 +42,12 @@ html {
   clip-path: inset(100%);
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 .img {
   max-width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.page-title {
+  text-transform: uppercase;
 }

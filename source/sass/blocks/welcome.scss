@@ -1,18 +1,22 @@
 .welcome {
+  text-align: center;
+}
+
+.welcome__title {
+  background-color: #333333;
+  height: 389px;
+}
+
+.welcome__title img {
   display: block;
-  justify-content: center;
-    align-items: center;
-    text-align: center;
+  width: 282px;
+  height: 214px;
 }
 
 .welcome__slogan {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
   margin: 0;
 }
 
@@ -20,8 +24,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
   color: #333333;
 }

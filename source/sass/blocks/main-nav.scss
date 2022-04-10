@@ -1,13 +1,10 @@
 .main-nav {
   display: flex;
-}
-
-.main_nav__logo {
-  position: center;
-}
+  }
 
 .main-nav__list {
   display: flex;
+  flex-direction: row;
 }
 
 .main-nav__item {
@@ -22,11 +19,11 @@
   width: 153px;
 }
 
-.main-nav__item--active {
-  color: #766357;
-}
-
 .main-nav__link {
   text-decoration: none;
   color: #000000;
+}
+
+.main-nav__item--active {
+  color: #766357;
 }
