@@ -1,13 +1,26 @@
 @import "global/global.scss";
-@import "global/fonts.scss";
+
+// Нет подключения шрифтов
+// @import "global/fonts.scss";
+
 @import "blocks/header.scss";
+
 @import "blocks/main-nav";
+
 @import "blocks/welcome";
+
 @import "blocks/advantages.scss";
+
 @import "blocks/search.scss";
+
 @import "blocks/footer.scss";
+
 @import "blocks/map.scss";
+
 @import "blocks/stats.scss";
+
 @import "blocks/sights.scss";
+
 @import "blocks/video.scss";
+
 @import "blocks/form.scss";

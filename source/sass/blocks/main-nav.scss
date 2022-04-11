@@ -1,29 +1,62 @@
 .main-nav {
-  display: flex;
+  // что бы кнопка и логотип позиционировались относительно этого блока
+  position: relative;
+
+  min-height: 56px;
+  // display: flex;
 }
 
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+}
+
+// Пропишим flex только с планшета и row не нужен так как они и так будут в строчку
 .main-nav__list {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
+  display: none;
 }
 
 .main-nav__item {
+  display: flex;
+  align-items: center;
+  width: 153px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  display: flex;
-  align-items: center;
   text-align: center;
-  text-transform: uppercase;
   color: #000000;
-  width: 153px;
+  text-transform: uppercase;
 }
 
 .main-nav__link {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .main-nav__item--active {
   color: #766357;
+}
+
+// Кнопку делаем absolute и ставим справа, позиционирование поправишь по макету
+.main-nav__toggle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+  width: 23px;
+  height: 22px;
+  // Временно, полосочки можно сделать через псевдоэлементы, а не картинкой
+
+  background-color: red;
+  border: none;
 }

@@ -1,32 +1,42 @@
 .advantages__wrapper {
   padding: 33px 22px 40px 16px;
+  // Центруем текст
+
+  text-align: center;
+  // Делаему всего блока "Все заглавные"
+  text-transform: uppercase;
+
   background-color: #eeeeee;
 }
 
 .advantages__item-wrapper .advantages__wrapper {
-  background-color: #81b3d2;
   color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 .advantages__title {
+  padding-bottom: 11px;
+
   font-size: 18px;
   line-height: 26px;
-  padding-bottom: 11px;
 }
 
 .advantages__number {
   margin: 0;
+  padding-bottom: 17px;
+
   font-size: 14px;
   line-height: 21px;
-  padding-bottom: 17px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .advantages__description {
   margin: 0;
+
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .advantages__image {
@@ -36,6 +46,6 @@
 }
 
 .advantages__other-wrapper {
-  padding-left: 47px;
   padding-bottom: 22px;
+  padding-left: 47px;
 }

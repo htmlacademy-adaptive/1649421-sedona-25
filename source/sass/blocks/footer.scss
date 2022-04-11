@@ -1,17 +1,21 @@
 .footer {
   padding-top: 36px;
   padding-bottom: 36px;
+  // Центруем текстовые элементы
+
+  text-align: center;
 }
 
 .footer__hashtag {
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
+  display: inline-block;
+
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  // text-align: center;
   color: #000000;
-  font-weight: 700;
-  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .footer__list {
@@ -24,12 +28,20 @@
 }
 
 .footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
+
   background-color: #81b3d2;
+}
+
+// flex
+.footer__copyright {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .footer__copyright-text {
@@ -37,14 +49,14 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .footer__copyright-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 27px;
   height: 35px;
 }

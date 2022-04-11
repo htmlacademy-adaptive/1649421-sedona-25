@@ -4,11 +4,12 @@
 
 .form__fieldset-title {
   margin: 0;
+  padding-bottom: 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  padding-bottom: 20px;
 }
 
 .form__contact-item:not(:last-child) {
@@ -19,8 +20,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   color: #333333;
+  text-transform: uppercase;
 }
 
 .form__contact-input {
@@ -43,14 +44,15 @@
 
 .form__submit {
   width: 281px;
-  height: 58px;
-  background-color: #81b3d2;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
+  // Убираем высоту
+  // height: 58px;
+  // background-color: #81b3d2;
+  // font-weight: 700;
+  // font-size: 21px;
+  // line-height: 26px;
+  // text-transform: uppercase;
+  // color: #ffffff;
+  // border: none;
 }
 
 .form__note {
@@ -58,6 +60,6 @@
   font-size: 12px;
   line-height: 21px;
   text-align: center;
-  text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
 }

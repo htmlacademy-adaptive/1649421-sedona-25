@@ -2,28 +2,42 @@
   text-align: center;
 }
 
+// Ширину фиксированную не задаем, раздвигаем блок паддингами, поправить потом по макету
 .welcome__title {
+  padding-top: 90px;
+  padding-bottom: 85px;
+  // height: 389px;
+
   background-color: #333333;
-  height: 389px;
 }
 
+// Центруем картинку
 .welcome__title img {
   display: block;
   width: 282px;
   height: 214px;
+  margin: 0 auto;
+}
+
+// Паддинги сделать по макету, можно позже
+.welcome__description {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .welcome__slogan {
+  margin: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+  text-transform: uppercase;
 }
 
 .welcome__intro {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   color: #333333;
+  text-transform: uppercase;
 }
