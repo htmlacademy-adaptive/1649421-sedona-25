@@ -1,18 +1,14 @@
 .footer {
   padding-top: 36px;
   padding-bottom: 36px;
-  // Центруем текстовые элементы
-
   text-align: center;
 }
 
 .footer__hashtag {
   display: inline-block;
-
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  // text-align: center;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -33,11 +29,9 @@
   align-items: center;
   width: 48px;
   height: 48px;
-
   background-color: #81b3d2;
 }
 
-// flex
 .footer__copyright {
   display: flex;
   justify-content: center;

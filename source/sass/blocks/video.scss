@@ -1,12 +1,6 @@
 .video {
-  // display: block;
-  // justify-content: center;
-  // align-items: center;
-  // Паддинги потом подогнать по макету
   padding: 20px;
-
   text-align: center;
-  // Делаем все заглавные
   text-transform: uppercase;
 }
 
@@ -21,22 +15,18 @@
 
 .video__description {
   margin: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  // text-transform: uppercase;
 }
 
-// Центрируем и прописываем размеры
 .video__image {
   width: 280px;
   height: 177px;
   margin: 0 auto;
 }
 
-// Прописываем блок для картинки
 .video__image img {
   display: block;
 }

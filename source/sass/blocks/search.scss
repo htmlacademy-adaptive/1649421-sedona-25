@@ -1,8 +1,5 @@
 .search {
-  // У section нет маргинов по умолчанию
-  // margin: 0;
   padding: 39px 18px 49px 18px;
-
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -11,7 +8,6 @@
 .search__title {
   margin: 0;
   padding-bottom: 31px;
-
   font-size: 21px;
   line-height: 26px;
 }
@@ -19,21 +15,7 @@
 .search__text {
   margin: 0;
   padding-bottom: 32px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
-
-// Выносим основные хараетеристики на класс button
-// .search__button {
-// display: block;
-// width: 284px;
-// padding: 16px 49px;
-
-// font-weight: 700;
-// color: #ffffff;
-// text-decoration: none;
-
-// background-color: #81b3d2;
-// }
