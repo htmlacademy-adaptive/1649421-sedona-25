@@ -1,0 +1,35 @@
+.stats {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stats__title {
+  background-color: #333333;
+  height: 214px;
+}
+
+.stats__wrapper {
+  padding: 37px 20px 25px 20px;
+}
+
+.stats__slogan {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.stats__intro {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}

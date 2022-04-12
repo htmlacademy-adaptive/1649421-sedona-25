@@ -1,0 +1,37 @@
+.welcome {
+  text-align: center;
+}
+
+.welcome__title {
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-color: #333333;
+}
+
+.welcome__title img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+}
+
+.welcome__description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.welcome__slogan {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.welcome__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}

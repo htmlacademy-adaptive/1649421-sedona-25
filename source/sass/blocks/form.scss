@@ -1,0 +1,55 @@
+.form {
+  text-align: center;
+}
+
+.form__fieldset-title {
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__contact-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form__contact-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.form__contact-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__options-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form__options-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.form__submit {
+  width: 281px;
+}
+
+.form__note {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+.video {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.video__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.video__image {
+  width: 280px;
+  height: 177px;
+  margin: 0 auto;
+}
+
+.video__image img {
+  display: block;
+}

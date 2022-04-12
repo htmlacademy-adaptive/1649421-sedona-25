@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="body">
@@ -41,7 +43,7 @@
   <main class="main-container">
     <section class="welcome">
       <div class="welcome__title">
-        <img src="img/back-mobile.jpg" width="901" height="389" alt="фон приветствия">
+        <img src="img/text-index.svg" width="282" height="214" alt="welcome">
         <h1 class="visually-hidden">Welcome Sedona</h1>
       </div>
       <div class="welcome__description">
@@ -115,7 +117,7 @@
           </div>
         </li>
         <li class="advantages__item">
-          <div class="advantages__wrapper">
+          <div class="advantages__wrapper advantages__wrapper--light">
             <h3 class="advantages__title">Мало туристов</h3>
             <p class="advantages__number">— №5 —</p>
             <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
@@ -131,10 +133,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">карта</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru"
-        width="100%" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="footer">
@@ -143,19 +142,19 @@
       <li class="footer__item">
         <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте</span>
-          <img src="img/icon-vk.svg" width="48" height="48" alt="Вконтакте">
+          <img src="img/icon-vk.svg" width="24" height="24" alt="Вконтакте">
         </a>
       </li>
       <li class="footer__item">
         <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Телеграм</span>
-          <img src="img/icon-telegram.svg" width="48" height="48" alt="Телеграм">
+          <img src="img/icon-telegram.svg" width="24" height="24" alt="Телеграм">
         </a>
       </li>
       <li class="footer__item">
         <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Ютуб</span>
-          <img src="img/icon-youtube.svg" width="48" height="48" alt="Ютуб">
+          <img src="img/icon-youtube.svg" width="24" height="24" alt="Ютуб">
         </a>
       </li>
     </ul>
@@ -163,10 +162,8 @@
       <span class="footer__copyright-text">Разработано:</span>
       <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">HTML Academy</span>
-        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35"
-          viewBox="0 0 27 35">
-          <path
-            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35">
+          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" />
         </svg>
       </a>
     </div>
