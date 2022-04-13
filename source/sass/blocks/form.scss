@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.form__wrapper-fieldset {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .form__fieldset-title {
   margin: 0;
   padding-bottom: 20px;
@@ -28,6 +35,25 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+.form__options {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.form__option--attraction {
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form__options-item:not(:last-child) {

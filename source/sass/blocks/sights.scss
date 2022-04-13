@@ -1,9 +1,28 @@
+.sights__list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .sights__item {
   padding: 24px 20px;
 }
 
-.sights__imaga img {
+.sights__image img {
   display: block;
+}
+
+.sights__image--first img {
+  @media (min-width: 768px){
+    width: 648px;
+     /*надо поменять картинки*/
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    /*надо поменять картинки*/
+  }
 }
 
 .sights__title {

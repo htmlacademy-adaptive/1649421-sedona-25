@@ -15,10 +15,26 @@
 
 .main-nav__list {
   display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 153px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 240px;
+  }
 }
 
 .main-nav__link {
@@ -42,4 +58,8 @@
   height: 22px;
   background-color: #ff0000;
   border: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
