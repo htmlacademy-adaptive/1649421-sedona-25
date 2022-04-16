@@ -13,14 +13,15 @@
   transform: translateX(-50%);
 }
 
+.main-nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav__list {
   display: none;
 
   @media (min-width: 768px) {
-    display: flex;
-  }
-
-  @media (min-width: 1200px) {
     display: flex;
   }
 }
