@@ -21,7 +21,7 @@
 .main-nav__list {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
@@ -29,11 +29,11 @@
 .main-nav__item {
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 153px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     width: 240px;
   }
 }
@@ -60,7 +60,7 @@
   background-color: #ff0000;
   border: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

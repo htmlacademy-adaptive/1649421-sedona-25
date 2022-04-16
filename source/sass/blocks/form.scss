@@ -3,7 +3,7 @@
 }
 
 .form__wrapper-fieldset {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -38,18 +38,18 @@
 }
 
 .form__options {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .form__option--attraction {
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }

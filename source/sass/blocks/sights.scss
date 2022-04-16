@@ -1,28 +1,34 @@
 .sights__list {
-  @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.sights__item {
-  padding: 24px 20px;
+.sights__item:first-child {
+  grid-column: 1/-1;
+}
+
+.sights__item:first-child .sights__image {
+  height: 400px;
+}
+
+.sights__image--first img {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
 }
 
 .sights__image img {
   display: block;
-}
-
-.sights__image--first img {
-  @media (min-width: 768px){
-    width: 648px;
-     /*надо поменять картинки*/
-  }
-
-  @media (min-width: 1200px) {
-    width: 1200px;
-    /*надо поменять картинки*/
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .sights__title {
