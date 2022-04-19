@@ -27,11 +27,9 @@
 }
 
 .main-nav__list {
-  display: flex;
-}
-
-.main-nav__list {
-  display: flex;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
