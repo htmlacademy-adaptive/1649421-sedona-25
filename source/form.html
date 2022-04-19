@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Form</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,32 +12,36 @@
 <body class="body">
   <header class="header">
     <nav class="main-nav">
-      <a class="main-nav__logo" href="index.html">
+      <a class="main-nav__logo">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
       </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list list-reset">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
-            Фото и видео
-          </a>
-        </li>
-        <li class="main-nav__item  main-nav__item--active">
-          <a class="main-nav__link">
-            Форма отзыва
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="main-nav__container main-nav--open">
+        <ul class="main-nav__list list-reset">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list list-reset">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__item--active">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -108,7 +113,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--attractions">
           <h2 class="form__fieldset-title form__fieldset-title--lines">Посещенные достопримечательности:</h2>
-          <ul class="form__options list-reset">
+          <ul class="form__options form__option--attraction list-reset">
             <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="мост-дьявола" id="devil-bridge" checked>
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>

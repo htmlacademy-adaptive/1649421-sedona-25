@@ -13,12 +13,35 @@
   transform: translateX(-50%);
 }
 
-.main-nav__list {
+.main-nav__container {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav--open .main-nav__container {
+  display: block;
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }
 
 .main-nav__link {
@@ -42,4 +65,8 @@
   height: 22px;
   background-color: #ff0000;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
