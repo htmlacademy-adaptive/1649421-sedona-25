@@ -1,9 +1,5 @@
 .welcome {
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    height: 518px;
-  }
 }
 
 .welcome__title {

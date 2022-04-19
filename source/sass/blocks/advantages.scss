@@ -45,15 +45,6 @@
   line-height: 21px;
 }
 
-.advantages__image img {
-  width: 100%;
-  height: 100%;
-
-  @media (min-width: $tablet-width) {
-    height: 256px;
-  }
-}
-
 .advantages__image {
   @media (min-width: $tablet-width) {
     height: 256px;

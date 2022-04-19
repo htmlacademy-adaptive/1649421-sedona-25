@@ -1,15 +1,9 @@
-const link = document.querySelector('.button-search-hotel');
-const modal = document.querySelector('.modal-container');
-const close = document.querySelector('.modal-close-button');
+const btnToggle = document.querySelector('.main-nav__toggle');
+const menu = document.querySelector('.main-nav');
 
-if (link) {
-  link.addEventListener('click', (item) => {
+if (btnToggle) {
+  btnToggle.addEventListener('click', (item) => {
     item.preventDefault();
-    modal.classList.add('modal-container-open');
-  });
-
-  close.addEventListener('click', (item) => {
-    item.preventDefault();
-    modal.classList.remove('modal-container-open');
+    menu.classList.toggle('main-nav--open');
   });
 }

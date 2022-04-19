@@ -1,5 +1,11 @@
-$tablet-width: 768px;
+@tablet-width {
+  width: 768px;
+}
 
-$desktop-width: 1200px;
+@desktop-width {
+  width: 1200px;
+}
 
-$mobile-width-only: 767px;
+@mobile-width-only {
+  width: 767px;
+}
