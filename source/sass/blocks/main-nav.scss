@@ -14,12 +14,24 @@
 }
 
 .main-nav__container {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav--open .main-nav__container {
   display: block;
+}
+
+.main-nav__list {
+  display: flex;
+}
+
+.main-nav__list {
+  display: flex;
 }
 
 .main-nav__item {
@@ -60,3 +72,4 @@
     display: none;
   }
 }
+
