@@ -51,6 +51,11 @@
   }
 }
 
+.advantages__image img {
+  width: 100%;
+  height: 100%;
+}
+
 .advantages__item:nth-child(2n) .advantages__image {
   order: -1;
 }
