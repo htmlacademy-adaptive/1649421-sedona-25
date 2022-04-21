@@ -3,6 +3,14 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 371px;
+  }
 }
 
 .search__title {
@@ -18,4 +26,23 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.search__button {
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}
+
+.search__button:hover {
+  background: #669EC0;
+}
+
+.search__button:active {
+  background: #5496BD;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search__button:disabled {
+  background: #E5E5E5;
 }
