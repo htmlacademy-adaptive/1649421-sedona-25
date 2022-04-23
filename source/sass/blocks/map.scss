@@ -3,3 +3,10 @@
   height: 350px;
   border: none;
 }
+
+.map {
+  background-image: url("../img/map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}

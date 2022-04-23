@@ -57,14 +57,24 @@
   color: #766357;
 }
 
+.main-nav__link:hover {
+  color: #81b3d2;
+}
+
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 5px;
   right: 10px;
   width: 23px;
   height: 22px;
-  background-color: #ff0000;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
   border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;

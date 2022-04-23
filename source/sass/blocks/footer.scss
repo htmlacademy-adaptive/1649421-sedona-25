@@ -6,6 +6,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 140px;
+    padding-right: 120px;
   }
 }
 
@@ -17,11 +24,21 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__list {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__item:not(:last-child) {
@@ -37,6 +54,14 @@
   background-color: #81b3d2;
 }
 
+.footer__link:hover {
+  background-color: #669ec0;
+}
+
+.footer__link:active {
+  background-color: #5496bd;
+}
+
 .footer__copyright {
   display: flex;
   justify-content: center;
@@ -50,6 +75,7 @@
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  padding-right: 7px;
 }
 
 .footer__copyright-link {
