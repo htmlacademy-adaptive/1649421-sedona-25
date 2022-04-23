@@ -74,6 +74,7 @@
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     display: none;

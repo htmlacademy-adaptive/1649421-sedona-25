@@ -17,7 +17,7 @@
 }
 
 .footer__hashtag {
-  display: inline;
+  display: inline-block;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -35,7 +35,6 @@
   display: flex;
   justify-content: center;
   padding-bottom: 40px;
-  vertical-align: middle;
 
   @media (min-width: $tablet-width) {
     padding: 0;
