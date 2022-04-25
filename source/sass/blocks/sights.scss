@@ -1,3 +1,9 @@
+.sights {
+  @media (min-width: $tablet-width) {
+padding: 0 60px;
+  }
+}
+
 .sights__list {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -15,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding: 0;
   }
 }
 
@@ -29,6 +36,78 @@
 
 .sights__image {
   padding-bottom: 15px;
+}
+
+.sights__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.sights__image--road {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tablet-road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/desktop-road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+}
+
+.sights__image--plant {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tablet-plant.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    min-height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/desktop-plant.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+}
+
+.sights__image--forest-road {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tablet-forest-road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    min-height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/desktop-forest-road.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
+}
+
+.sights__image--bridge {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/tablet-bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    min-height: 267px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/desktop-bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+  }
 }
 
 .sights__description {
@@ -51,6 +130,10 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .sights__title {
@@ -78,4 +161,5 @@
   border: none;
   background-image: url("../img/like-icon.svg");
   background-repeat: no-repeat;
+  background-position: left;
 }
