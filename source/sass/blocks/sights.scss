@@ -9,8 +9,20 @@
   }
 }
 
+.sights__item {
+  padding: 25px 20px;
+}
+
 .sights__item:first-child {
   grid-column: 1/-1;
+}
+
+.sights__image {
+  padding-bottom: 15px;
+}
+
+.sights__description {
+  margin-bottom: 11px;
 }
 
 .sights__item:first-child .sights__image {
@@ -33,7 +45,6 @@
 
 .sights__title {
   margin: 0;
-  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -52,4 +63,9 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  padding-left: 37px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/like-icon.svg");
+  background-repeat: no-repeat;
 }
