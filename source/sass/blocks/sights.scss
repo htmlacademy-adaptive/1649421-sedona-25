@@ -11,10 +11,20 @@
 
 .sights__item {
   padding: 25px 20px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .sights__item:first-child {
   grid-column: 1/-1;
+  border-top: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .sights__image {
