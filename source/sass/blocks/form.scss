@@ -1,12 +1,25 @@
 .form {
   text-align: center;
+  padding: 24px 20px 48px 20px;
 }
 
 .form__wrapper-fieldset {
+  outline: none;
+  border: none;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 24px;
+  padding-bottom: 39px;
 }
 
 .form__fieldset-title {
@@ -16,6 +29,11 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+.form__contact-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__contact-item:not(:last-child) {
@@ -28,6 +46,8 @@
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
+  margin-right: auto;
+  margin-left: 16px;
 }
 
 .form__contact-input {
@@ -35,6 +55,9 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .form__options {
@@ -56,7 +79,11 @@
 }
 
 .form__options-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 36px;
+}
+
+.form__options-item {
+  position: relative;
 }
 
 .form__options-label {
@@ -64,6 +91,18 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  position: relative;
+}
+
+.control-mark {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -62px;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 50%;
 }
 
 .form__submit {
@@ -77,4 +116,47 @@
   text-align: center;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
+}
+
+.form__input-wrapper {
+  padding-right: 57px;
+}
+
+.form__input-wrapper--phone {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form__input-wrapper--mail {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form__options-input {
+  padding-left: 62px;
+}
+
+.form__options-input:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.check-mark {
+  content: "";
+    position: absolute;
+    top: -10px;
+    left: -62px;
+    width: 46px;
+    height: 46px;
+    background: #f2f2f2;
+    border-radius: 4px;
 }
