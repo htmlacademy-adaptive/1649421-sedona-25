@@ -20,6 +20,10 @@
   border-top: 1px solid #e5e5e5;
   padding-top: 24px;
   padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .form__fieldset-title {
@@ -29,6 +33,7 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .form__contact-item {
@@ -82,16 +87,19 @@
   margin-bottom: 36px;
 }
 
-.form__options-item {
-  position: relative;
-}
-
 .form__options-label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   position: relative;
+}
+
+.form__options-input:checked + .check-mark::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 10px;
 }
 
 .control-mark {
@@ -107,15 +115,23 @@
 
 .form__submit {
   width: 281px;
+  margin-bottom: 3px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-left: 0;
+  }
 }
 
 .form__note {
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
-  text-align: center;
+  text-align: end;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
+  display: block;
 }
 
 .form__input-wrapper {
@@ -152,11 +168,47 @@
 
 .check-mark {
   content: "";
-    position: absolute;
-    top: -10px;
-    left: -62px;
-    width: 46px;
-    height: 46px;
-    background: #f2f2f2;
-    border-radius: 4px;
+  position: absolute;
+  top: -10px;
+  left: -62px;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 4px;
+}
+
+.form__fieldset--recall textarea {
+  border: none;
+  background-color: #f2f2f2;
+  min-height: 150px;
+  min-width: 279px;
+  padding-top: 16px;
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+    min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 768px;
+  }
+}
+
+.form__fieldset--submit {
+  width: 281px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 648px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
 }
