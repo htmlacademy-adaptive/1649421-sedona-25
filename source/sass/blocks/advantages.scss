@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.advantages__item:not(.advantage__item--full):after {
+.advantages__item:not(.advantage__item--full)::after {
   content: "";
   position: absolute;
   left: 18px;
@@ -206,5 +206,5 @@
 }
 
 .advantages__item:last-child::after {
-display: none;
+  display: none;
 }

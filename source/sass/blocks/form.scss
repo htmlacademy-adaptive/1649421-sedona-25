@@ -56,10 +56,11 @@
 .form__fieldset-title--lines {
   overflow: hidden;
 }
+
 .form__fieldset-title--lines span {
-display: inline-block;
-vertical-align: middle;
-padding: 0 55px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 55px;
 }
 
 .form__fieldset-title--lines::before,
@@ -212,12 +213,12 @@ padding: 0 55px;
 
 .form__options-input:checked + .form__check-mark::before {
   content: "";
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    width: 22px;
-    height: 16px;
-    background-image: url("../img/tick.svg");
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
 }
 
 .form__fieldset--recall textarea {
