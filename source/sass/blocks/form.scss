@@ -150,10 +150,6 @@
   background-position: right;
 }
 
-.form__options-input {
-  padding-left: 62px;
-}
-
 .form__options-input:checked + .control-mark::before {
   content: "";
   position: absolute;

@@ -4,7 +4,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 162px;
+    padding: 58px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +34,7 @@
   width: 280px;
   height: 177px;
   margin: 0 auto;
+  position:relative;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/video-tablet.jpg");
@@ -58,8 +59,20 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.video__link {
+  position: absolute;
+  top: 63px;
+  left: 124px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    top: 223px;
+    left: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 376px;
   }
 }

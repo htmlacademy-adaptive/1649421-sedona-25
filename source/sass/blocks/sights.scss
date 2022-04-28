@@ -23,6 +23,10 @@ padding: 0 60px;
     border-bottom: none;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .sights__item:first-child {
@@ -36,6 +40,10 @@ padding: 0 60px;
 
 .sights__image {
   padding-bottom: 15px;
+
+@media (min-width: $desktop-width) {
+  padding-bottom: 0;
+}
 }
 
 .sights__wrapper {
@@ -47,8 +55,15 @@ padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     background-color: transparent;
+    bottom: 0px;
   }
+}
+
+.sights__wrapper:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;}
 }
 
 .sights__image--road {
@@ -130,10 +145,6 @@ padding: 0 60px;
   height: 100%;
   object-fit: cover;
   object-position: center;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
 .sights__title {
@@ -141,6 +152,7 @@ padding: 0 60px;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .sights__author {
@@ -149,6 +161,13 @@ padding: 0 60px;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+.sights__title,
+.sights__author {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .sights__like {
