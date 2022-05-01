@@ -31,6 +31,10 @@
   grid-column: 1/-1;
 }
 
+.advantages__item--full:nth-child(2) .advantages__item-wrapper {
+  grid-template-columns: 2fr 1fr;
+}
+
 .advantages__item--full:first-child .advantages__wrapper {
   background-image: url("../img/white-copy.svg");
   background-repeat: no-repeat;
