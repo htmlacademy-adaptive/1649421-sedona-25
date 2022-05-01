@@ -110,6 +110,7 @@
   border: none;
   background-color: #f2f2f2;
   flex-grow: 1;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .form__options {
@@ -141,6 +142,7 @@
   color: #000000;
   position: relative;
   padding-left: 62px;
+  min-height: 46px;
 }
 
 .form__control-mark {
