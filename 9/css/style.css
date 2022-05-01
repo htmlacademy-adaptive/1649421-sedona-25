@@ -718,82 +718,30 @@ html {
 @media (min-width: 1200px) {
   .sights__wrapper {
     position: absolute;
-    background-color: transparent;
-    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  .sights__item:nth-child(3) + .sights__wrapper {
+  .sights__item:nth-child(3n) .sights__wrapper {
     background-color: #eaeaea;
   }
 }
-
-@media (min-width: 768px) {
-  .sights__image--road {
-    background-image: url("../img/tablet-road.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-  }
-}
 @media (min-width: 1200px) {
-  .sights__image--road {
-    background-image: url("../img/desktop-road.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .sights__image--plant {
-    background-image: url("../img/tablet-plant.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-    min-height: 267px;
-  }
-}
-@media (min-width: 1200px) {
-  .sights__image--plant {
-    background-image: url("../img/desktop-plant.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .sights__image--forest-road {
-    background-image: url("../img/tablet-forest-road.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-    min-height: 267px;
-  }
-}
-@media (min-width: 1200px) {
-  .sights__image--forest-road {
-    background-image: url("../img/desktop-forest-road.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .sights__image--bridge {
-    background-image: url("../img/tablet-bridge.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-    min-height: 267px;
-  }
-}
-@media (min-width: 1200px) {
-  .sights__image--bridge {
-    background-image: url("../img/desktop-bridge.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
+  .sights__item:nth-child(3n) .sights__wrapper {
+    background-color: inherit;
   }
 }
 
 .sights__description {
   margin-bottom: 11px;
+}
+@media (min-width: 1200px) {
+  .sights__description {
+    color: #ffffff;
+  }
 }
 
 .sights__item:first-child .sights__image {
@@ -848,6 +796,12 @@ html {
   background-image: url("../img/like-icon.svg");
   background-repeat: no-repeat;
   background-position: left;
+}
+@media (min-width: 1200px) {
+  .sights__like {
+    color: #ffffff;
+    background-image: url("../img/like-icon-white.svg");
+  }
 }
 
 .video {
@@ -1049,6 +1003,7 @@ html {
   border: none;
   background-color: #f2f2f2;
   flex-grow: 1;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -1081,6 +1036,7 @@ html {
   color: #000000;
   position: relative;
   padding-left: 62px;
+  min-height: 46px;
 }
 
 .form__control-mark {
