@@ -40,13 +40,13 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
-const optimizeImages = () => {
+export const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('source/img'))
 }
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
       encodeOptions: {
@@ -56,6 +56,10 @@ const createWebp = () => {
     .pipe(gulp.dest('source/img'))
 }
 
+//export default gulp.series(
+//  styles, optimizeImages, createWebp, server, watcher
+//);
+
 export default gulp.series(
-  styles, optimizeImages, createWebp, server, watcher
+  styles, server, watcher
 );
