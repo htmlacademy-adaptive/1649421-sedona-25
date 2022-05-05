@@ -39,6 +39,8 @@
 }
 
 .sights__image {
+  background-color: #333333;
+
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
   }
@@ -68,7 +70,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    ;
   }
 }
 
@@ -81,7 +84,11 @@
 }
 
 .sights__item:first-child .sights__image {
-  height: 400px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .sights__image--first img {
@@ -96,7 +103,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  background-color: #333333;
 }
 
 .sights__title {

@@ -19,6 +19,10 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__description {
@@ -63,16 +67,17 @@
 
 .video__link {
   position: absolute;
-  top: 63px;
-  left: 124px;
-  cursor: pointer;
+  top: 50%;
+  left: 53%;
 
-  @media (min-width: $tablet-width) {
-    top: 223px;
-    left: 300px;
-  }
+  width: 48px;
+  height: 54px;
 
-  @media (min-width: $desktop-width) {
-    left: 376px;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet) {
+    left: 50%;
   }
 }
