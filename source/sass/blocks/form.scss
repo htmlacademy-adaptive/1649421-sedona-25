@@ -1,6 +1,7 @@
 .form {
   text-align: center;
-  padding: 24px 20px 48px 20px;
+  padding-top: 24px;
+  padding-bottom: 48px;
 }
 
 .form__wrapper-fieldset {
@@ -13,34 +14,33 @@
     gap: 88px;
     padding-left: 60px;
     padding-right: 60px;
+    position: relative;
   }
 }
 
 .form__fieldset {
   border: none;
   margin: 0;
-  padding: 0;
   border-top: 1px solid #e5e5e5;
-  padding-top: 24px;
-  padding-bottom: 39px;
+  padding: 24px 20px 39px 20px;
 
   @media (min-width: $tablet-width) {
     border: none;
   }
 }
 
-.form__fieldset--data {
-  position: relative;
-}
-
 .form__fieldset--data::after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 338px;
-  background-color: #dbdbdb;
-  right: -44px;
-  top: 25px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 338px;
+    background-color: #dbdbdb;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .form__fieldset-title {
@@ -51,6 +51,10 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .form__fieldset-title--lines {
@@ -60,18 +64,20 @@
 .form__fieldset-title--lines span {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 55px;
+  padding: 0 20px;
 }
 
 .form__fieldset-title--lines::before,
 .form__fieldset-title--lines::after {
-  position: relative;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  height: 1px;
-  background-color: #dbdbdb;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
 }
 
 .form__fieldset-title--lines::before {
@@ -136,6 +142,7 @@
 }
 
 .form__options-label {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -143,17 +150,22 @@
   position: relative;
   padding-left: 62px;
   min-height: 46px;
+  padding-top: 10px;
 }
 
 .form__control-mark {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -16px;
+  top: 0;
+  left: 0;
   width: 46px;
   height: 46px;
   background: #f2f2f2;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 70px;
+  }
 }
 
 .form__submit {
@@ -175,6 +187,10 @@
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .form__contact-input--phone {
@@ -205,12 +221,20 @@
 .form__check-mark {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -16px;
+  top: 0;
+  left: 0;
   width: 46px;
   height: 46px;
   background: #f2f2f2;
   border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50px;
+  }
 }
 
 .form__options-input:checked + .form__check-mark::before {
@@ -223,10 +247,16 @@
   background-image: url("../img/tick.svg");
 }
 
+.form__fieldset--recall {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .form__fieldset--recall textarea {
   border: none;
   background-color: #f2f2f2;
   min-height: 150px;
+  resize: none;
   min-width: 279px;
   padding: 16px;
   font-weight: 700;
@@ -247,6 +277,7 @@
 .form__fieldset--submit {
   width: 281px;
   margin: auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -257,4 +288,10 @@
   @media (min-width: $desktop-width) {
     width: 768px;
   }
+}
+
+.form__submit button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }

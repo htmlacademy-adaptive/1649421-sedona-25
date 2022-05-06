@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 57px 53px;
+    padding: 40px 52px 57px 53px;
   }
 }
 
@@ -31,6 +31,10 @@
   grid-column: 1/-1;
 }
 
+.advantages__item--full:nth-child(2) .advantages__item-wrapper {
+  grid-template-columns: 2fr 1fr;
+}
+
 .advantages__item--full:first-child .advantages__wrapper {
   background-image: url("../img/white-copy.svg");
   background-repeat: no-repeat;
@@ -41,10 +45,6 @@
   @media (min-width: $tablet-width) {
     background-image: none;
     padding-top: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 47px;
   }
 }
 
@@ -60,12 +60,20 @@
   bottom: 0;
   height: 1px;
   background-color: #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__title {
-  padding-bottom: 11px;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 21px;
+  }
 }
 
 .advantages__number {
@@ -82,38 +90,21 @@
 }
 
 .advantages__image {
+  height: 260px;
+
   @media (min-width: $tablet-width) {
     height: 256px;
-    background-image: url("../img/photo-city-tablet.jpg");
-    background-size: cover;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/photo-city-desktop.jpg");
   }
 }
 
 .advantages__image img {
+  display: block;
   width: 100%;
   height: 100%;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
 .advantages__item:nth-child(2n) .advantages__image {
   order: -1;
-
-  @media (min-width: $tablet-width) {
-    height: 256px;
-    background-image: url("../img/photo-bridge-tablet.jpg");
-    background-size: cover;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/photo-bridge-desktop.jpg");
-  }
 }
 
 .advantages__other-wrapper {

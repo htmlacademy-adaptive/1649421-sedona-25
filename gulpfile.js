@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import squoosh from 'gulp-libsquoosh';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -39,6 +40,25 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+export const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('source/img'))
+}
+
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+    .pipe(squoosh({
+      encodeOptions: {
+        webp: {},
+      },
+    }))
+    .pipe(gulp.dest('source/img'))
+}
+
+//export default gulp.series(
+//  styles, optimizeImages, createWebp, server, watcher
+//);
 
 export default gulp.series(
   styles, server, watcher
