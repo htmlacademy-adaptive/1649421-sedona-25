@@ -69,6 +69,14 @@
   text-decoration: none;
 }
 
+.footer__copyright:hover {
+  fill: #81b3d2;
+}
+
+.footer__copyright:active {
+  fill: #b3b3b3;
+}
+
 .footer__copyright-text {
   font-weight: 400;
   font-size: 14px;

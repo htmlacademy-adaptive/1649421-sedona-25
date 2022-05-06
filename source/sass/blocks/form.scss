@@ -14,6 +14,7 @@
     gap: 88px;
     padding-left: 60px;
     padding-right: 60px;
+    position: relative;
   }
 }
 
@@ -28,17 +29,18 @@
   }
 }
 
-.form__fieldset--data {
-  position: relative;
-}
-
 .form__fieldset--data::after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 338px;
-  background-color: #dbdbdb;
-  transform: translate(-50%, -50%);
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 338px;
+    background-color: #dbdbdb;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
 }
 
 .form__fieldset-title {
@@ -67,13 +69,15 @@
 
 .form__fieldset-title--lines::before,
 .form__fieldset-title--lines::after {
-  position: relative;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  height: 1px;
-  background-color: #dbdbdb;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
 }
 
 .form__fieldset-title--lines::before {

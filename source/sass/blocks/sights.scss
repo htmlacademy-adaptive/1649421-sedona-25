@@ -135,12 +135,24 @@
   padding-left: 37px;
   background-color: transparent;
   border: none;
-  background-image: url("../img/like-icon.svg");
-  background-repeat: no-repeat;
-  background-position: left;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
-    background-image: url("../img/like-icon-white.svg");
+  }
+}
+
+.sights__like svg {
+  fill: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
   }
 }

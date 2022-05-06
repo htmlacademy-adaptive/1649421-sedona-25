@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 57px 53px;
+    padding: 40px 52px 57px 53px;
   }
 }
 
@@ -46,10 +46,6 @@
     background-image: none;
     padding-top: 40px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 47px;
-  }
 }
 
 .advantages__item {
@@ -64,10 +60,13 @@
   bottom: 0;
   height: 1px;
   background-color: #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__title {
-  padding-bottom: 11px;
   font-size: 18px;
   line-height: 26px;
 
@@ -99,6 +98,7 @@
 }
 
 .advantages__image img {
+  display: block;
   width: 100%;
   height: 100%;
 }

@@ -4,7 +4,7 @@
 
 .welcome__title {
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 86px;
   background-color: #333333;
   background-image: url("../img/intro-triangle.svg"),
     url("../img/back-mobile.jpg");
@@ -57,8 +57,7 @@
 
   @media (min-width: $tablet-width) {
     font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: 30px;
   }
 }
 
