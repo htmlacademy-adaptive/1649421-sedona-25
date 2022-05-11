@@ -62,19 +62,16 @@
   background-color: #5496bd;
 }
 
+.footer__link img:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  ;
+}
+
 .footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-}
-
-.footer__copyright:hover {
-  fill: #81b3d2;
-}
-
-.footer__copyright:active {
-  fill: #b3b3b3;
 }
 
 .footer__copyright-text {
@@ -85,6 +82,18 @@
   color: #000000;
   text-transform: uppercase;
   padding-right: 7px;
+}
+
+.footer__copyright:hover {
+  fill: #81b3d2;
+}
+
+.footer__copyright:hover span {
+  fill: #81b3d2;
+}
+
+.footer__copyright:active {
+  fill: #b3b3b3;
 }
 
 .footer__copyright-link {

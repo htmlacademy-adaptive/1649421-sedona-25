@@ -17,6 +17,15 @@
   display: none;
   position: absolute;
   z-index: 2;
+  top: -17px;
+  left: 0;
+  right: 0;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -36,9 +45,13 @@
 
 .main-nav__item {
   text-align: center;
+  background-color: #81b3d2;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
     width: 153px;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +89,7 @@
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   border: none;
-  background-color: transparent;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: none;

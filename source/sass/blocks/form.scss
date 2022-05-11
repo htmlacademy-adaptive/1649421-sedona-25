@@ -119,6 +119,15 @@
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.form__contact-input:hover {
+  background-color: #e5e5e5;
+}
+
+.form__contact-input:active {
+  background-color: #ffffff;
+  outline: 4px solid rgba(229, 229, 229, 0.3);
+}
+
 .form__options {
   @media (min-width: $tablet-width) {
     display: grid;
@@ -166,6 +175,16 @@
   @media (min-width: $tablet-width) {
     left: 70px;
   }
+}
+
+.form__control-mark:hover,
+.form__check-mark:hover {
+  background-color: #e5e5e5;
+}
+
+.form__control-mark:active,
+.form__check-mark:active {
+  background-color: #d5d5d5;
 }
 
 .form__submit {
@@ -294,4 +313,13 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.form__submit:hover {
+  background-color: #669ec0;
+}
+
+.form__submit:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
