@@ -46,6 +46,7 @@
 .main-nav__item {
   text-align: center;
   background-color: #81b3d2;
+  padding: 17px 17px 13px;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
@@ -61,11 +62,15 @@
 
 .main-nav__link {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .main-nav__link--active {
@@ -82,16 +87,25 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 17px;
+  right: 20px;
   width: 23px;
   height: 22px;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: #ffffff;
+  z-index: 10;
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--open .main-nav__toggle {
+  background-image: url("../img/icon-cross.svg");
 }
