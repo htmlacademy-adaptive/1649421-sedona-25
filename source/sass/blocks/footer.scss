@@ -65,8 +65,7 @@
 }
 
 .footer__link svg {
-  z-index: 10;
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .footer__link:hover,
@@ -79,10 +78,6 @@
   background-color: #5496bd;
 }
 
-.footer__link img:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .footer__copyright {
   display: inline-flex;
   justify-content: center;
@@ -90,26 +85,22 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.footer__copyright-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
+}
 
-  padding-right: 7px;
+.footer__copyright-text {
+  margin-right: 7px;
 }
 
 .footer__copyright svg {
-  width: 27px;
-  height: 34px;
   fill: #000000;
 }
 
 .footer__copyright:hover,
 .footer__copyright:focus {
-  fill: #81b3d2;
+  color: #81b3d2;
   outline: none;
 }
 

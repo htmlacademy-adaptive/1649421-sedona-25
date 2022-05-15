@@ -23,9 +23,21 @@
   }
 }
 
+.welcome--page .welcome__title img {
+  display: block;
+  width: 230px;
+  height: 40px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 80px;
+  }
+}
+
 .welcome__title img {
   display: block;
-  width: 282px;
+  width: 230px;
   height: 214px;
   margin: 0 auto;
 

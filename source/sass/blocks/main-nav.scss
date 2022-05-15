@@ -17,24 +17,21 @@
   display: none;
   position: absolute;
   z-index: 2;
-  top: -17px;
+  top: 0;
   left: 0;
   right: 0;
-  padding-top: 17px;
-  padding-bottom: 13px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #ffffff;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    position: static;
   }
 }
 
 .main-nav--open .main-nav__container {
   display: block;
+  background-color: #81b3d2;
 }
 
 .main-nav__list {
@@ -45,7 +42,6 @@
 
 .main-nav__item {
   text-align: center;
-  background-color: #81b3d2;
   padding: 17px 17px 13px;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 
@@ -67,6 +63,7 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
 
   @media (min-width: $tablet-width) {
     color: #000000;

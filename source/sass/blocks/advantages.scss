@@ -48,11 +48,11 @@
   }
 }
 
-.advantages__item {
+.advantages__some {
   position: relative;
 }
 
-.advantages__item:not(.advantage__item--full)::after {
+.advantages__some::after {
   content: "";
   position: absolute;
   left: 18px;
