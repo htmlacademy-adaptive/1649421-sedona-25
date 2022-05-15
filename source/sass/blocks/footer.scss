@@ -64,6 +64,11 @@
   background-color: #81b3d2;
 }
 
+.footer__link svg {
+  z-index: 10;
+  fill: #ffffff;
+}
+
 .footer__link:hover,
 .footer__link:focus {
   background-color: #669ec0;
