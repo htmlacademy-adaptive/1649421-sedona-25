@@ -1,18 +1,17 @@
 .footer {
-  padding-top: 36px;
+  padding-top: 33px;
   padding-bottom: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 60px;
+    align-items: center;
+    padding: 33px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 140px;
-    padding-right: 120px;
+    padding: 33px 120px;
   }
 }
 
@@ -27,7 +26,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin: 0;
   }
 }
 
@@ -91,7 +90,7 @@
 }
 
 .footer__copyright-text {
-  margin-right: 7px;
+  margin-right: 12px;
 }
 
 .footer__copyright svg {
@@ -109,7 +108,7 @@
 }
 
 .footer__copyright:active {
-  fill: #b3b3b3;
+  color: #b3b3b3;
 }
 
 .footer__copyright:active svg {
