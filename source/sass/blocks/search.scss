@@ -11,7 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 60px 371px;
+    padding-top: 60px;
+    padding-bottom: 66px;
   }
 }
 
@@ -32,8 +33,13 @@
   padding-bottom: 32px;
   font-size: 14px;
   line-height: 21px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 46px;
   }
 }
 

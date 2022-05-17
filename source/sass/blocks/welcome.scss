@@ -28,6 +28,15 @@
 .welcome--page .welcome__title {
   padding-top: 50px;
   padding-bottom: 68px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 93px;
+    padding-bottom: 116px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 128px;
+  }
 }
 
 .welcome__title img {
@@ -55,18 +64,34 @@
 }
 
 .welcome__description {
-  padding: 32px 30px 3px;
+  padding: 34px 25px 2px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 80px 42px;
+    max-width: 535px;
+    padding-top: 47px;
+    padding-bottom: 41px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 700px;
-    margin: 0 auto;
     padding-top: 58px;
     padding-bottom: 30px;
+    max-width: 565px;
+  }
+}
+
+.welcome--page .welcome__description {
+  padding: 34px 20px 14px;
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 530px;
+    padding-top: 110px;
   }
 }
 
@@ -76,7 +101,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -85,8 +110,14 @@
 }
 
 .welcome--page .welcome__slogan {
+  padding-bottom: 12px;
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 21px;
   }
 }
 
@@ -97,6 +128,11 @@
   color: #333333;
   text-transform: uppercase;
 }
+
+// .welcome--page .welcome__intro {
+// padding: 0 83px 0;
+// line-height: 22px;
+// }
 
 .welcome__intro br {
   @media (min-width: $tablet-width) {

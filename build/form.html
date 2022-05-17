@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="body">
+<body class="body no-js">
   <header class="header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="index.html">
@@ -52,8 +52,8 @@
       </div>
       <div class="welcome__description">
         <h1 class="welcome__slogan">Оставьте свой отзыв</h1>
-        <p class="welcome__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
+        <p class="welcome__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных
+          вами достопримечательностях</p>
       </div>
     </section>
     <section class="form">
@@ -64,16 +64,17 @@
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
                 <label class="form__contact-label" for="name">Имя*:</label>
-                <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" required>
+                <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" placeholder="Имя"
+                  required>
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label" for="surname">Фамилия*:</label>
-                <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота" required>
+                <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота"
+                  placeholder="Фамилия" required>
               </li>
               <li class="form__contact-item">
-                <label class="form__contact-label" for="patronymic">Отчество*:</label>
-                <input class="form__contact-input" id="patronymic" type="text" name="patronymic" value="Викторович"
-                  required>
+                <label class="form__contact-label" for="patronymic">Отчество:</label>
+                <input class="form__contact-input" id="patronymic" type="text" name="patronymic" value="Викторович">
               </li>
             </ul>
           </fieldset>
@@ -124,7 +125,7 @@
         <fieldset class="form__fieldset form__fieldset--attractions">
           <h2 class="form__fieldset-title form__fieldset-title--lines">
             <span>Посещенные достопримечательности:</span>
-            </h2>
+          </h2>
           <ul class="form__options form__options--attraction list-reset">
             <li class="form__options-item">
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола
@@ -164,12 +165,12 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--submit">
           <button class="form__submit button" type="submit">Отправить отзыв</button>
-          <span class="form__note">*-обязательные поля</span>
+          <span class="form__note">* — обязательные поля</span>
         </fieldset>
       </form>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--form">
     <a class="footer__hashtag" href="#">#visitsedona</a>
     <ul class="footer__list list-reset">
       <li class="footer__item">

@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 33px;
-  padding-bottom: 36px;
+  padding-top: 34px;
+  padding-bottom: 21px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -12,6 +12,16 @@
 
   @media (min-width: $desktop-width) {
     padding: 33px 120px;
+  }
+}
+
+.footer--form {
+  padding-top: 50px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 33px;
   }
 }
 
