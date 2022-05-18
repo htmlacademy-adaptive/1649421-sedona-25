@@ -1,5 +1,6 @@
 .form {
   text-align: center;
+
   @media (min-width: $tablet-width) {
     padding: 62px 60px;
   }
@@ -72,6 +73,7 @@
 
 .form__fieldset--feedback {
   padding-bottom: 24px;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
   }
@@ -252,6 +254,7 @@
 
 .form__options-item:not(:last-child) {
   margin-bottom: 16px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }

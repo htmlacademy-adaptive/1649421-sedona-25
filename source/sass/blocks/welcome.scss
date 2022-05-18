@@ -84,6 +84,7 @@
 
 .welcome--page .welcome__description {
   padding: 34px 20px 14px;
+
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-left: 25px;
@@ -128,6 +129,7 @@
 
 .welcome--page .welcome__slogan {
   padding-bottom: 12px;
+
   @media (min-width: $tablet-width) {
     font-size: 30px;
     padding-bottom: 8px;
