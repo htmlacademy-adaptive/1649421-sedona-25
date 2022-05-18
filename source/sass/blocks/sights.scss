@@ -52,11 +52,12 @@
 
 .sights__wrapper {
   padding-top: 15px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 22px 20px 15px 20px;
+    padding: 12px 14px 5px;
     background-color: #f2f2f2;
   }
 
@@ -80,6 +81,8 @@
 
 .sights__description {
   margin-bottom: 11px;
+  padding-top: 10px;
+  padding-left: 6px;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -128,6 +131,7 @@
 .sights__author {
   @media (min-width: $desktop-width) {
     color: #ffffff;
+    padding-top: 1px;
   }
 }
 
@@ -154,7 +158,8 @@
   top: 0;
 
   @media (min-width: $tablet-width) {
-    top: 14px;
+    top: 16px;
+    left: 5px;
   }
 
   @media (min-width: $desktop-width) {
