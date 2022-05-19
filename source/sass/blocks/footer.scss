@@ -1,19 +1,36 @@
 .footer {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 34px;
+  padding-bottom: 21px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 60px;
+    align-items: center;
+    padding: 33px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 140px;
-    padding-right: 120px;
+    padding: 33px 120px;
   }
+}
+
+.footer--form {
+  padding-top: 50px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+  }
+}
+
+.footer--catalog {
+  padding-top: 8px;
 }
 
 .footer__hashtag {
@@ -27,8 +44,18 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin: 0;
   }
+}
+
+.footer__hashtag:hover,
+.footer__hashtag:focus {
+  outline: none;
+  color: rgba(129, 179, 210, 1);
+}
+
+.footer__hashtag:active {
+  color: rgba(179, 179, 179, 1);
 }
 
 .footer__list {
@@ -38,6 +65,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin-left: -9px;
   }
 }
 
@@ -54,8 +82,14 @@
   background-color: #81b3d2;
 }
 
-.footer__link:hover {
+.footer__link svg {
+  fill: #ffffff;
+}
+
+.footer__link:hover,
+.footer__link:focus {
   background-color: #669ec0;
+  outline: none;
 }
 
 .footer__link:active {
@@ -63,28 +97,41 @@
 }
 
 .footer__copyright {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.footer__copyright:hover {
+.footer__copyright-text {
+  margin-right: 12px;
+}
+
+.footer__copyright svg {
+  fill: #000000;
+}
+
+.footer__copyright:hover,
+.footer__copyright:focus {
+  color: #81b3d2;
+  outline: none;
+}
+
+.footer__copyright:hover svg {
   fill: #81b3d2;
 }
 
 .footer__copyright:active {
-  fill: #b3b3b3;
+  color: #b3b3b3;
 }
 
-.footer__copyright-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  padding-right: 7px;
+.footer__copyright:active svg {
+  fill: #b3b3b3;
 }
 
 .footer__copyright-link {
