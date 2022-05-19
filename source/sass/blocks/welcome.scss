@@ -152,6 +152,10 @@
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 514px;
+  }
 }
 
 .welcome__description--catalog .welcome__intro {
