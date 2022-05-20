@@ -292,6 +292,10 @@
   background-color: #d5d5d5;
 }
 
+.form__check-mark:active::before {
+  background-image: url("../img/tick-active.svg");
+}
+
 .form__submit {
   width: 100%;
   margin-bottom: 3px;
@@ -366,6 +370,10 @@
   width: 22px;
   height: 16px;
   background-image: url("../img/tick.svg");
+}
+
+.form__options-input:checked + .form__check-mark::before:active {
+  background: rgba(51, 51, 51, 0.3);
 }
 
 .form__fieldset--recall {
