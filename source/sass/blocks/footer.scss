@@ -86,6 +86,10 @@
   fill: #ffffff;
 }
 
+.footer__link:active svg {
+  fill: #ffffff 30%;
+}
+
 .footer__link:hover,
 .footer__link:focus {
   background-color: #669ec0;

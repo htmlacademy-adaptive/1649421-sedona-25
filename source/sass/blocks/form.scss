@@ -25,7 +25,7 @@
   border: none;
   margin: 0;
   border-top: 1px solid #e5e5e5;
-  padding: 24px 20px 40px;
+  padding: 24px 20px 38px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -44,7 +44,7 @@
 }
 
 .form__fieldset--contact {
-  padding-bottom: 17px;
+  padding-bottom: 33px;
 
   @media (min-width: 768px) {
     padding-bottom: 0;
@@ -76,11 +76,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
+    padding-top: 42px;
   }
 }
 
 .form__fieldset--attractions {
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
@@ -233,7 +234,8 @@
 .form__contact-input:active,
 .form__contact-input:focus {
   background-color: #ffffff;
-  outline: 4px solid rgba(229, 229, 229, 0.3);
+  border: 4px solid #e5e5e5;
+  outline: none;
 }
 
 .form__options {
@@ -282,6 +284,11 @@
   border-radius: 50%;
 }
 
+.form__options-label:focus .form__control-mark,
+.form__options-label:focus .form__check-mark {
+  background-color: #d5d5d5;
+}
+
 .form__options-label:hover .form__control-mark,
 .form__options-label:hover .form__check-mark {
   background-color: #e5e5e5;
@@ -290,10 +297,6 @@
 .form__options-label:active .form__control-mark,
 .form__options-label:active .form__check-mark {
   background-color: #d5d5d5;
-}
-
-.form__check-mark:active::before {
-  background-image: url("../img/tick-active.svg");
 }
 
 .form__submit {
@@ -372,20 +375,16 @@
   background-image: url("../img/tick.svg");
 }
 
-.form__options-input:checked + .form__check-mark::before:active {
-  background: rgba(51, 51, 51, 0.3);
-}
-
 .form__fieldset--recall {
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 0 32px;
+    padding: 17px 0 32px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 64px;
+    padding-top: 61px;
   }
 }
 
@@ -411,6 +410,17 @@
   }
 }
 
+.form__fieldset--recall textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.form__fieldset--recall textarea:active,
+.form__fieldset--recall textarea:focus {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+  outline: none;
+}
+
 .form__fieldset--submit {
   width: 281px;
   margin: auto;
@@ -427,13 +437,4 @@
   @media (min-width: $desktop-width) {
     width: 768px;
   }
-}
-
-.form__submit:hover {
-  background-color: #669ec0;
-}
-
-.form__submit:active {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
 }

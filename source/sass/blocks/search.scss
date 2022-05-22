@@ -5,7 +5,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    // padding: 60px 155px;
     padding-top: 60px;
     padding-bottom: 58px;
   }
@@ -40,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 46px;
+    font-size: 12px;
   }
 }
 
@@ -55,17 +55,4 @@
   @media (min-width: $tablet-width) {
     width: 458px;
   }
-}
-
-.search__button:hover {
-  background: #669ec0;
-}
-
-.search__button:active {
-  background: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.search__button:disabled {
-  background: #e5e5e5;
 }

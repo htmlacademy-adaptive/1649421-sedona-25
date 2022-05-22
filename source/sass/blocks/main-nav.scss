@@ -96,6 +96,11 @@
   color: #81b3d2;
 }
 
+.main-nav__link:focus {
+  color: #81b3d2;
+  outline: 0;
+}
+
 .main-nav__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
