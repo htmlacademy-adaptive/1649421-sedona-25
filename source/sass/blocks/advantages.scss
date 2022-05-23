@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 44px 74px 53px;
+    padding: 44px 40px 53px;
   }
 }
 
@@ -28,7 +28,7 @@
   padding: 40px 20px 33px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 67px 33px;
+    padding: 44px 8px 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +50,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%, cover;
-  padding-top: 71px;
+  padding-top: 70px;
   padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 48px;
+    padding: 47px 60px 11px;
   }
 }
 
@@ -93,12 +93,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 47px 12px;
+    padding: 0 85px 12px;
   }
 }
 
 .advantages__item--full .advantages__title {
-  padding: 0 59px 14px;
+  padding: 0 20px 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 78px 14px;
+  }
 }
 
 .advantages__number {
@@ -117,8 +125,13 @@
   font-size: 14px;
   line-height: 21px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 10px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 13px;
+    padding: 0;
   }
 }
 
@@ -134,7 +147,7 @@
   height: 260px;
 
   @media (min-width: $tablet-width) {
-    height: 256px;
+    height: 100%;
   }
 }
 
@@ -142,24 +155,10 @@
   display: block;
   width: 100%;
   height: 100%;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("img/photo-city-mobile@2x.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-  }
 }
 
 .advantages__item:nth-child(2n) .advantages__image {
   order: -1;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("img/bridge-mobile@2x.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-  }
 }
 
 .advantages__other {
@@ -170,6 +169,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
+    margin-bottom: -20px;
   }
 }
 
@@ -190,7 +190,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 150px 57px 80px;
+    padding: 150px 57px 101px;
   }
 }
 
@@ -227,7 +227,7 @@
   margin: 0;
   font-size: 18px;
   line-height: 26px;
-  padding-top: 8px;
+  padding-top: 7px;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {

@@ -284,18 +284,18 @@
   border-radius: 50%;
 }
 
-.form__options-label:focus .form__control-mark,
-.form__options-label:focus .form__check-mark {
+.form__options-input:focus + .form__control-mark,
+.form__options-input:focus + .form__check-mark {
   background-color: #d5d5d5;
 }
 
-.form__options-label:hover .form__control-mark,
-.form__options-label:hover .form__check-mark {
+.form__options-label:hover + .form__control-mark,
+.form__options-label:hover + .form__check-mark {
   background-color: #e5e5e5;
 }
 
-.form__options-label:active .form__control-mark,
-.form__options-label:active .form__check-mark {
+.form__options-label:active + .form__control-mark,
+.form__options-label:active + .form__check-mark {
   background-color: #d5d5d5;
 }
 
@@ -399,6 +399,7 @@
   font-size: 18px;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
+  border: 4px solid transparent;
 
   @media (min-width: $tablet-width) {
     min-width: 648px;

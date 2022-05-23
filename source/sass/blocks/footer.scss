@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 34px;
+  padding-top: 32px;
   padding-bottom: 21px;
   text-align: center;
 
@@ -87,7 +87,7 @@
 }
 
 .footer__link:active svg {
-  fill: #ffffff 30%;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer__link:hover,
