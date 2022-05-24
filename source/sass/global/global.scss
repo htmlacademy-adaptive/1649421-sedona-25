@@ -65,3 +65,17 @@ html {
   background-color: #81b3d2;
   border: none;
 }
+
+.button:hover {
+  background: #669ec0;
+}
+
+.button:active,
+.button:focus {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background: #e5e5e5;
+}

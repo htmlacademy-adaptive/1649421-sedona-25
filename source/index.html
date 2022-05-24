@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="body">
+<body class="body no-js">
 
   <header class="header">
     <nav class="main-nav">
@@ -19,30 +19,26 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list list-reset">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list list-reset">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -56,7 +52,7 @@
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p class="welcome__intro">
-          Рассмотрим 5 причин, по которым<br> Седона круче, чем гранд каньон!
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </div>
     </section>
@@ -72,17 +68,12 @@
             </div>
             <div class="advantages__image">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260"
-                  alt="городок">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="городок">
               </picture>
             </div>
           </div>
@@ -117,17 +108,12 @@
             </div>
             <div class="advantages__image">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320"
-                  height="260" alt="мост">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="мост">
               </picture>
             </div>
           </div>
@@ -164,9 +150,13 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">карта</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map__img">
+        <picture>
+          <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
+          <img src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" width="320" height="260" alt="Карта.">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="footer">
