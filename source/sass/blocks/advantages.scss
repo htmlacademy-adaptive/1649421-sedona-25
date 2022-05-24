@@ -1,19 +1,22 @@
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .advantages__wrapper {
   padding: 26px 34px 25px;
+
   text-align: center;
   text-transform: uppercase;
+
   background-color: #eeeeee;
 
   @media (min-width: $tablet-width) {
-    min-height: 256px;
     flex-shrink: 0;
+    min-height: 256px;
     padding: 43px 38px 25px;
   }
 
@@ -23,21 +26,24 @@
 }
 
 .advantages__item-wrapper .advantages__wrapper {
-  color: #ffffff;
-  background-color: #81b3d2;
   padding: 40px 20px 33px;
 
+  color: #ffffff;
+
+  background-color: #81b3d2;
+
   @media (min-width: $tablet-width) {
-    padding: 44px 8px 33px;
+    padding: 44px 31px 33px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding: 50px 83px 33px;
   }
 }
 
 .advantages__item--full {
   width: 100%;
+
   grid-column: 1/-1;
 }
 
@@ -46,16 +52,18 @@
 }
 
 .advantages__item--full:first-child .advantages__wrapper {
+  padding-top: 70px;
+  padding-bottom: 37px;
+
   background-image: url("../img/white-copy.svg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%, cover;
-  padding-top: 70px;
-  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    background-image: none;
     padding-top: 40px;
+
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,10 +78,12 @@
 .advantages__item:not(.advantages__item--full)::after {
   content: "";
   position: absolute;
-  left: 18px;
   right: 18px;
   bottom: 0;
+  left: 18px;
+
   height: 1px;
+
   background-color: #d6d6d6;
 
   @media (min-width: $tablet-width) {
@@ -82,14 +92,16 @@
 }
 
 .advantages__title {
-  font-size: 18px;
-  line-height: 26px;
   margin: 0;
   padding-bottom: 11px;
 
+  font-size: 18px;
+  line-height: 26px;
+
   @media (min-width: $tablet-width) {
-    font-size: 21px;
     padding: 0 11px 11px;
+
+    font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,18 +112,15 @@
 .advantages__item--full .advantages__title {
   padding: 0 20px 14px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 45px 14px;
-  }
-
   @media (min-width: $desktop-width) {
-    padding: 0 78px 14px;
+    padding: 0 32px 14px;
   }
 }
 
 .advantages__number {
   margin: 0;
   padding-bottom: 17px;
+
   font-size: 14px;
   line-height: 21px;
 
@@ -122,16 +131,12 @@
 
 .advantages__description {
   margin: 0;
+
   font-size: 14px;
   line-height: 21px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 10px;
-  }
-
   @media (min-width: $desktop-width) {
-    font-size: 13px;
-    padding: 0;
+    font-size: 14px;
   }
 }
 
@@ -167,25 +172,31 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0;
     margin-bottom: -20px;
+    padding: 0;
+
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .advantages__other-item {
   text-transform: uppercase;
+
   background-repeat: no-repeat;
 }
 
 .advantages__other-wrapper {
   padding: 4px 10px 17px 65px;
+
   text-transform: uppercase;
+
   background-position: left 18px top 4px;
 
   @media (min-width: $tablet-width) {
-    padding: 150px 31px 59px;
+    padding: 150px 32px 80px;
+
     text-align: center;
+
     background-position: center 57px;
   }
 
@@ -205,8 +216,8 @@
 
 .advantages__other-wrapper--food {
   background-image: url("../img/icon-burger.svg");
-  background-size: 40px 35px;
   background-repeat: no-repeat;
+  background-size: 40px 35px;
 
   @media (min-width: $tablet-width) {
     background-size: 76px 78px;
@@ -215,8 +226,8 @@
 
 .advantages__other-wrapper--souvenir {
   background-image: url("../img/icon-gift.svg");
-  background-size: 32px 38px;
   background-repeat: no-repeat;
+  background-size: 32px 38px;
 
   @media (min-width: $tablet-width) {
     background-size: 64px 75px;
@@ -225,20 +236,23 @@
 
 .advantages__other-title {
   margin: 0;
-  font-size: 18px;
-  line-height: 26px;
   padding-top: 7px;
   padding-bottom: 16px;
 
+  font-size: 18px;
+  line-height: 26px;
+
   @media (min-width: $tablet-width) {
-    font-size: 21px;
     padding-bottom: 24px;
+
+    font-size: 21px;
   }
 }
 
 .advantages__item-wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: 1fr 2fr;
   }
 }
