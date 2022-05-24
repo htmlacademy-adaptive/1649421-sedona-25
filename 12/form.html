@@ -19,34 +19,30 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list list-reset">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list list-reset">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class="welcome welcome--page">
+    <section class="welcome welcome--page welcome--form">
       <div class="welcome__title">
         <img src="img/text-sedona.svg" width="229" height="39" alt="sedona">
         <h1 class="visually-hidden">sedona</h1>
@@ -65,13 +61,11 @@
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
                 <label class="form__contact-label" for="name">Имя*:</label>
-                <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" placeholder="Имя"
-                  required>
+                <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" placeholder="Имя" required>
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label" for="surname">Фамилия*:</label>
-                <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота"
-                  placeholder="Фамилия" required>
+                <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота" placeholder="Фамилия" required>
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label" for="patronymic">Отчество:</label>
@@ -80,17 +74,15 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--contact">
-            <h2 class="form__fieldset-title">Контактная информация</h2>
+            <h2 class="form__fieldset-title">Контактная информация:</h2>
             <ul class="form__contact-list list-reset">
               <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
-                <input class="form__contact-input form__contact-input--phone" id="phone" type="text" name="phone"
-                  placeholder="Введите телефон">
+                <input class="form__contact-input form__contact-input--phone" id="phone" type="text" name="phone" placeholder="Введите телефон">
               </li>
               <li class="form__contact-item">
                 <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
-                <input class="form__contact-input form__contact-input--mail" id="e-mail" type="text" name="e-mail"
-                  placeholder="Введите e-mail">
+                <input class="form__contact-input form__contact-input--mail" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -102,22 +94,19 @@
           <ul class="form__options list-reset">
             <li class="form__options-item">
               <label class="form__options-label form__options-label--radio" for="filter-positive">Скорее положительное
-                <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное"
-                  id="filter-positive" checked>
+                <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное" id="filter-positive" checked>
                 <span class="form__control-mark"></span>
               </label>
             </li>
             <li class="form__options-item">
               <label class="form__options-label form__options-label--radio" for="filter-negative">Скорее отрицательное
-                <input class="form__options-input visually-hidden" type="radio" name="feedback" value="отрицательное"
-                  id="filter-negative">
+                <input class="form__options-input visually-hidden" type="radio" name="feedback" value="отрицательное" id="filter-negative">
                 <span class="form__control-mark"></span>
               </label>
             </li>
             <li class="form__options-item">
               <label class="form__options-label form__options-label--radio" for="filter-difficult">Затрудняюсь ответить
-                <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь"
-                  id="filter-difficult">
+                <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь" id="filter-difficult">
                 <span class="form__control-mark"></span>
               </label>
             </li>
@@ -130,29 +119,25 @@
           <ul class="form__options form__options--attraction list-reset">
             <li class="form__options-item">
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола
-                <input class="form__options-input visually-hidden" type="checkbox" name="attractions"
-                  value="мост-дьявола" id="devil-bridge" checked>
+                <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="мост-дьявола" id="devil-bridge" checked>
                 <span class="form__check-mark"></span>
               </label>
             </li>
             <li class="form__options-item">
               <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол
-                <input class="form__options-input visually-hidden" type="checkbox" name="attractions"
-                  value="гора-колокол" id="bell-mountain" checked>
+                <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="гора-колокол" id="bell-mountain" checked>
                 <span class="form__check-mark"></span>
               </label>
             </li>
             <li class="form__options-item">
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк
-                <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Слайд-парк"
-                  id="slide-park" checked>
+                <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Слайд-парк" id="slide-park" checked>
                 <span class="form__check-mark"></span>
               </label>
             </li>
             <li class="form__options-item">
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы
-                <input class="form__options-input visually-hidden" type="checkbox" name="attractions"
-                  value="Красные-скалы" id="red-rocks">
+                <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Красные-скалы" id="red-rocks">
                 <span class="form__check-mark"></span>
               </label>
             </li>
@@ -206,6 +191,7 @@
       </svg>
     </a>
   </footer>
+  <!-- Открытие модального окна классом modal--open, открытие сообщения об успешной отправке modal--open-success, открытие сообщения об ошибке modal--open-error-->
   <section class="modal">
     <div class="modal__container modal__container-error">
       <div class="modal__wrapper-text">
@@ -220,8 +206,7 @@
     <div class="modal__container modal__container-success">
       <div class="modal__wrapper-text">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы
-          опубликуем его на сайте.</p>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
       </div>
       <div class="modal__wrapper-btn">
         <button class="modal__button button">Закрыть окно</button>
